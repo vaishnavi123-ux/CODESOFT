@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div class="container">
+ <header>
+ <h1>Delicious Bites Restaurant</h1>
+ <p id="demo-link">FOR DEMO - <a href="#">CLICK HERE</a></p>
+    </header>
+    <section class="menu-section">
+        <h2>Appetizers</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+          <div class="image-wrapper">
+             <img src="dish1.png" alt="Bruschetta">
+              <span class="fav-icon" onclick="toggleFav(this)">❤️</span>
+                </div>
+                <div class="item-name">Bruschetta</div>
+                <div class="meta">
+                    <span>⏱ 20 min</span>
+                    <span>⭐ 4.8</span>
+                </div>
+                <div class="item-description">
+                    Toasted bread topped with tomatoes, garlic, basil, and olive oil.
+                </div>
+                <div class="bottom-row">
+                    <span class="item-price">$8.99</span>
+                    <button class="add-btn" onclick="addToCart('Bruschetta')">🛒 Add</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="image-wrapper">
+                    <img src="dish2.png" alt="Stuffed Mushrooms">
+                    <span class="fav-icon" onclick="toggleFav(this)">❤️</span>
+                </div>
+                <div class="item-name">Stuffed Mushrooms</div>
+                <div class="meta">
+                    <span>⏱ 25 min</span>
+                    <span>⭐ 5.0</span>
+                </div>
+                <div class="item-description">
+                    Mushrooms filled with cheese, herbs, and breadcrumbs.
+                </div>
+                <div class="bottom-row">
+                    <span class="item-price">$10.99</span>
+                    <button class="add-btn" onclick="addToCart('Stuffed Mushrooms')">🛒 Add</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Main Courses</h2>
+        <div class="menu-grid">
+
+            <div class="menu-item">
+                <div class="image-wrapper">
+                    <img src="dish3.png" alt="Grilled Salmon">
+                    <span class="fav-icon" onclick="toggleFav(this)">❤️</span>
+                </div>
+                <div class="item-name">Grilled Salmon</div>
+                <div class="meta">
+                    <span>⏱ 30 min</span>
+                    <span>⭐ 4.7</span>
+                </div>
+                <div class="item-description">
+                    Fresh salmon fillet grilled to perfection, served with vegetables and rice.
+                </div>
+                <div class="bottom-row">
+                    <span class="item-price">$18.99</span>
+                    <button class="add-btn" onclick="addToCart('Grilled Salmon')">🛒 Add</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="image-wrapper">
+                    <img src="dish4.png" alt="Beef Steak">
+                    <span class="fav-icon" onclick="toggleFav(this)">❤️</span>
+                </div>
+                <div class="item-name">Beef Steak</div>
+                <div class="meta">
+                    <span>⏱ 35 min</span>
+                    <span>⭐ 4.9</span>
+                </div>
+                <div class="item-description">
+                    Juicy beef steak cooked to your liking, with mashed potatoes and gravy.
+                </div>
+                <div class="bottom-row">
+                    <span class="item-price">$22.99</span>
+                    <button class="add-btn" onclick="addToCart('Beef Steak')">🛒 Add</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+  <section class="menu-section">
+        <h2>Desserts</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="image-wrapper">
+                    <img src="dish5.png" alt="Chocolate Cake">
+                    <span class="fav-icon" onclick="toggleFav(this)">❤️</span>
+                </div>
+                <div class="item-name">Chocolate Cake</div>
+                <div class="meta">
+                    <span>⏱ 15 min</span>
+                    <span>⭐ 4.8</span>
+                </div>
+                <div class="item-description">
+                    Rich chocolate cake with a molten center, served with vanilla ice cream.
+                </div>
+                <div class="bottom-row">
+                    <span class="item-price">$6.99</span>
+                    <button class="add-btn" onclick="addToCart('Chocolate Cake')">🛒 Add</button>
+                </div>
+            </div>
+      <div class="menu-item">
+                <div class="image-wrapper">
+                    <img src="dish6.png" alt="Tiramisu">
+                    <span class="fav-icon" onclick="toggleFav(this)">❤️</span>
+                </div>
+                <div class="item-name">Tiramisu</div>
+                <div class="meta">
+                    <span>⏱ 10 min</span>
+                    <span>⭐ 4.9</span>
+                </div>
+                <div class="item-description">
+                    Classic Italian dessert with coffee-soaked ladyfingers and mascarpone.
+                </div>
+                <div class="bottom-row">
+                    <span class="item-price">$7.99</span>
+                    <button class="add-btn" onclick="addToCart('Tiramisu')">🛒 Add</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
