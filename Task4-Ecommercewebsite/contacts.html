@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Demo - Contact</title>
+     <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">E-Shop </div>
+         <i class="fa-solid fa-cart-arrow-down" id="cart"></i>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Contact Us</h1>
+        <p>Get in touch for support or inquiries.</p>
+    </section>
+    <section class="categories" style="max-width: 600px; margin: 20px auto;">
+        <h2>Contact Form</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 E-Shop Demo. All rights reserved terms of use and privacy policy.</p>
+         <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+     
+</body>
+</html>
