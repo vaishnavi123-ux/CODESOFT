@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f6f68d;
+}
+
+
+header {
+    text-align: center;
+    padding: 25px;
+    background-image: url(image.png);
+    background-size: cover;
+    color: white;
+    height: 150px;
+}
+
+#demo-link a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+
+.menu-section {
+    margin-top: 40px;
+}
+
+.menu-section h2 {
+    border-bottom: 2px solid #8B4513;
+    padding-bottom: 10px;
+    color: #8B4513;
+    font-size: 1.8em;
+}
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.menu-item {
+    background: white;
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.image-wrapper {
+    position: relative;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+
+.fav-icon {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Text */
+.item-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #777;
+    margin: 5px 0;
+}
+
+.item-description {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Bottom row */
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #8B4513;
+}
+
+.add-btn {
+    background: #8B4513;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background: #6f350f;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
