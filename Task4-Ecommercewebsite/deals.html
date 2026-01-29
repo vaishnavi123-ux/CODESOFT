@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Demo - Deals</title>
+     <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">E-Shop </div>
+         <i class="fa-solid fa-cart-arrow-down" id="cart"></i>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <h1>Special Deals</h1>
+        <p>Don't miss out on our limited-time offers!</p>
+    </section>
+    <section class="products" id="product-list">
+        <!-- Sample deals (discounted products) -->
+        <div class="product" data-category="electronics">
+            <img src="selllaptop.png" alt="Discount Laptop">
+            <div class="product-info">
+                <h3>Discount Laptop</h3>
+                <p><s>$999</s> $799</p>
+                <button onclick="addTocart('Discount Laptop')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-category="clothing">
+            <img src="sellshirt.png" alt="Sale T-Shirt">
+            <div class="product-info">
+                <h3>Sale T-Shirt</h3>
+                <p><s>$20</s> $15</p>
+                <button onclick="addTocart('Sale T-Shirt')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 E-Shop Demo. All rights reserved terms of use and privacy policy.</p>
+         <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+        
+    </div>
+    </footer>
+    <script src="script.js"></script>
+     
+</body>
+</html>
