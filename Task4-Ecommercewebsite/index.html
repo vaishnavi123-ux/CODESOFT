@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Demo - Home</title>
+     <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">E-Shop </div>
+        <i class="fa-solid fa-cart-arrow-down" id="cart"></i>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search products...">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="hero1">
+        
+    </section>
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <div class="category" onclick="filterCategory('electronics')">Electronics</div>
+            <div class="category" onclick="filterCategory('clothing')">Clothing</div>
+            <div class="category" onclick="filterCategory('home')">Home & Garden</div>
+            <div class="category" onclick="filterCategory('books')">Books</div>
+        </div>
+    </section>
+    <section class="products" id="product-list">
+        <!-- Sample products (same as before) -->
+        <div class="product" data-category="electronics">
+            <img src="laptop.png" alt="Laptop">
+            <div class="product-info">
+                <h3>Laptop</h3>
+                <p>$999</p>
+                <button onclick="addToCart('Laptop')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-category="clothing">
+            <img src="shirt.png" alt="T-Shirt">
+            <div class="product-info">
+                <h3>T-Shirt</h3>
+                <p>$20</p>
+                <button onclick="addToCart('T-Shirt')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-category="home">
+            <img src="chair.png" alt="Chair">
+            <div class="product-info">
+                <h3>Chair</h3>
+                <p>$150</p>
+                <button onclick="addToCart('Chair')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product" data-category="books">
+            <img src="book.png" alt="Book">
+            <div class="product-info">
+                <h3>Best Seller Book</h3>
+                <p>$15</p>
+                <button onclick="addToCart('Book')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 E-Shop . All rights reserved terms of use and privacy policy.</p>
+         <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-facebook"></i>
+        </a>
+
+        <a href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-instagram"></i>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
