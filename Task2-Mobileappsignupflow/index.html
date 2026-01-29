@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mobile Signup Flow Demo</title>
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone-container">
+ <header class="app-header">
+    </br>
+  <h1 id="header-title">Sign up here<span style='font-size:20px;'>&#128071;</span></h1>
+</header>
+
+  <div class="screen active" id="welcome">
+    <image src="image.png" class="app-image"></image>
+    <h2>Welcome to our app <i class="fa-sharp fa-solid fa-face-smile"></i></h2>
+    <p>Please login or sign up to continue using our app.</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    </br>
+      <a href="https://x.com" class="fa fa-twitter"></a>
+    </div>
+
+    <p class="or">or login with email</p>
+    <button class="primary" onclick="showScreen('signup')">Sign Up</button>
+
+    <p class="link">Already have an account?
+      <span onclick="showScreen('login')">Login</span>
+    </p>
+  </div>
+ <div class="screen" id="signup">
+    <h2>Just a few thing to get started!</h2>
+    <i class="fa-solid fa-circle-user"></i></br>
+    <p>Please register with email to continue.</p>
+   <p class="or">or login with email</p>
+
+    <input type="email" id="signupEmail" placeholder="Email">
+    <input type="password" id="signupPassword" placeholder="Password">
+
+    <label class="checkbox">
+      <input type="checkbox" id="signupPolicy"> I agree with privacy policy
+    </label>
+  <button class="primary" onclick="signupUser()">Sign Up</button>
+ <p class="link">Already have an account?
+      <span onclick="showScreen('login')">Login</span>
+    </p>
+  </div>
+
+  <div class="screen" id="login">
+    <h2>Login Now</h2>
+    <p>Please login to continue using our app.</p>
+
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+    </br>
+      <a href="https://x.com" class="fa fa-twitter"></a>
+  </div>
+
+    <p class="or">or login with email</p>
+    <input type="email" id="loginEmail" placeholder="Email">
+    <input type="password" id="loginPassword" placeholder="Password">
+   <p class="forgot">Forgot Password?</p>
+<button class="primary" onclick="loginUser()">Login</button>
+<p class="link">Don't have an account?
+  <span onclick="showScreen('signup')">Sign up</span>
+    </p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
